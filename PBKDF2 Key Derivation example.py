@@ -1,4 +1,5 @@
-import os, binascii
+import binascii
+import os
 from backports.pbkdf2 import pbkdf2_hmac
 
 salt = os.urandom(32)

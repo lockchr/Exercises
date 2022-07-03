@@ -1,4 +1,5 @@
-import os, binascii
+import binascii
+import os
 from passlib.hash import scrypt
 
 passwd = "p@$$w0rD~3"

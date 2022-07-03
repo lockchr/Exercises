@@ -1,8 +1,12 @@
-import hashlib, hmac, binascii
+import binascii
+import hashlib
+import hmac
+
 
 def hmac_sha256(key, msg):
-  return hmac.new(key, msg, hashlib.sha256).digest()
+    return hmac.new(key, msg, hashlib.sha256).digest()
+
 
 key = binascii.unhexlify("fa63f2b4c85af6bed3")
 msg = "some message".encode("utf8")
-print(binascii.hexlify(hmac_sha256(key, msg))) 
+print(binascii.hexlify(hmac_sha256(key, msg)))
