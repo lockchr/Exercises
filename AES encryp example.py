@@ -1,10 +1,8 @@
 import binascii
-import os
+import secrets
+
 import pbkdf2
 import pyaes
-import secrets
-from pydoc import plain
-from tokenize import PlainToken
 
 plaintext = "Sample text for Encryption"
 password = "s0m3p@$$w0rd"
